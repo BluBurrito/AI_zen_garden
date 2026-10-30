@@ -1,0 +1,385 @@
+
+/* =========================================
+   CSS ZEN GARDEN — MIDNIGHT LUXURY
+   Custom stylesheet
+   HTML remains completely unchanged.
+========================================= */
+
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap');
+
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #10100f;
+    color: #d8d2c5;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 15px;
+    line-height: 1.85;
+}
+
+/* MAIN PAGE */
+.page-wrapper {
+    width: min(1200px, 90%);
+    margin: auto;
+    padding: 70px 0;
+}
+
+/* INTRO */
+.intro {
+    position: relative;
+    padding: 100px 75px 70px;
+    background:
+        radial-gradient(circle at 85% 15%, #56452c55, transparent 35%),
+        linear-gradient(135deg, #25241f, #171714 70%);
+    border: 1px solid #665638;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.intro::before {
+    content: "01 — THE ART OF DESIGN";
+    display: block;
+    color: #c5a66b;
+    font-size: 11px;
+    letter-spacing: 5px;
+    margin-bottom: 30px;
+}
+
+.intro header h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(48px, 8vw, 90px);
+    line-height: 1.1;
+    font-weight: 500;
+    color: #f1e9d9;
+    letter-spacing: -3px;
+}
+
+.intro header h2 {
+    margin-top: 15px;
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(20px, 3vw, 32px);
+    font-weight: 400;
+    color: #c5a66b;
+}
+
+abbr {
+    text-decoration: none;
+    border-bottom: 1px dotted #b99a62;
+    cursor: help;
+}
+
+/* SUMMARY */
+.summary {
+    max-width: 650px;
+    margin-top: 45px;
+    padding: 25px 30px;
+    border-left: 2px solid #c5a66b;
+    background: #ffffff08;
+}
+
+.summary p:first-child {
+    font-size: 16px;
+    color: #e5ddce;
+}
+
+.summary p + p {
+    margin-top: 15px;
+}
+
+a {
+    color: #c5a66b;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #f2d8a3;
+}
+
+/* PREAMBLE */
+.preamble {
+    max-width: 760px;
+    margin-top: 75px;
+}
+
+h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 30px;
+    font-weight: 500;
+    color: #eee4d2;
+    margin-bottom: 22px;
+}
+
+.preamble h3::after,
+.main h3::after {
+    content: "";
+    display: block;
+    width: 45px;
+    height: 2px;
+    background: #b99a62;
+    margin-top: 13px;
+}
+
+p {
+    margin-bottom: 18px;
+    color: #aaa69c;
+}
+
+/* MAIN CONTENT */
+.main {
+    width: 72%;
+    float: left;
+    padding: 65px 45px 50px 0;
+}
+
+.main > div {
+    margin-bottom: 55px;
+    padding: 35px;
+    background: #191916;
+    border: 1px solid #343128;
+    border-radius: 4px;
+    transition: border-color 0.3s ease,
+                transform 0.3s ease;
+}
+
+.main > div:hover {
+    border-color: #90764b;
+    transform: translateY(-3px);
+}
+
+.main h3 {
+    font-size: 27px;
+}
+
+.main p:last-child {
+    margin-bottom: 0;
+}
+
+/* REQUIREMENTS */
+.requirements {
+    background: linear-gradient(145deg, #1e1d18, #171714) !important;
+}
+
+/* SIDEBAR */
+.sidebar {
+    width: 28%;
+    float: right;
+    padding-top: 65px;
+}
+
+.sidebar .wrapper > div {
+    background: #1b1a16;
+    border: 1px solid #39352b;
+    padding: 25px;
+    margin-bottom: 25px;
+    border-radius: 4px;
+}
+
+.sidebar h3 {
+    font-size: 21px;
+    margin-bottom: 20px;
+}
+
+.sidebar ul {
+    list-style: none;
+}
+
+.sidebar li {
+    padding: 12px 0;
+    border-bottom: 1px solid #353229;
+    font-size: 13px;
+}
+
+.sidebar li:last-child {
+    border-bottom: none;
+}
+
+.design-name {
+    display: block;
+    color: #e5ddce;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.designer-name {
+    font-size: 12px;
+    color: #ad956c;
+}
+
+.sidebar a:hover {
+    padding-left: 5px;
+}
+
+.indicator {
+    color: #c5a66b;
+}
+
+/* SIDEBAR SECTION LABELS */
+.select::before {
+    content: "✦ ";
+    color: #c5a66b;
+}
+
+.archives::before {
+    content: "◈ ";
+    color: #c5a66b;
+}
+
+.resources::before {
+    content: "✧ ";
+    color: #c5a66b;
+}
+
+/* FOOTER */
+footer {
+    clear: both;
+    padding: 35px 0;
+    border-top: 1px solid #48402f;
+    text-align: center;
+}
+
+footer a {
+    display: inline-block;
+    min-width: 65px;
+    margin: 5px;
+    padding: 9px 17px;
+    border: 1px solid #625237;
+    border-radius: 3px;
+    color: #c5a66b;
+    font-size: 12px;
+    letter-spacing: 2px;
+    transition: all 0.3s ease;
+}
+
+footer a:hover {
+    background: #c5a66b;
+    color: #151410;
+    transform: translateY(-3px);
+}
+
+/* DECORATIVE BACKGROUND */
+.extra1,
+.extra2,
+.extra3,
+.extra4,
+.extra5,
+.extra6 {
+    display: none;
+}
+
+/* SELECTION */
+::selection {
+    background: #c5a66b;
+    color: #14130f;
+}
+
+/* RESPONSIVE TABLET */
+@media screen and (max-width: 900px) {
+    .page-wrapper {
+        width: 92%;
+        padding: 35px 0;
+    }
+
+    .intro {
+        padding: 65px 40px;
+    }
+
+    .main {
+        width: 100%;
+        float: none;
+        padding: 55px 0 20px;
+    }
+
+    .sidebar {
+        width: 100%;
+        float: none;
+        padding-top: 20px;
+    }
+
+    .sidebar .wrapper {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
+
+    .sidebar .wrapper > div {
+        margin-bottom: 0;
+    }
+}
+
+/* RESPONSIVE MOBILE */
+@media screen and (max-width: 600px) {
+    body {
+        font-size: 14px;
+    }
+
+    .page-wrapper {
+        width: 94%;
+        padding: 18px 0;
+    }
+
+    .intro {
+        padding: 55px 25px 40px;
+    }
+
+    .intro header h1 {
+        letter-spacing: -2px;
+    }
+
+    .intro::before {
+        font-size: 9px;
+        letter-spacing: 3px;
+    }
+
+    .summary {
+        padding: 20px;
+        margin-top: 30px;
+    }
+
+    .preamble {
+        margin-top: 50px;
+    }
+
+    h3 {
+        font-size: 25px;
+    }
+
+    .main > div {
+        padding: 25px 20px;
+        margin-bottom: 25px;
+    }
+
+    .main h3 {
+        font-size: 23px;
+    }
+
+    .sidebar .wrapper {
+        grid-template-columns: 1fr;
+    }
+
+    footer a {
+        min-width: 55px;
+        padding: 8px 12px;
+    }
+}
+
+/* ACCESSIBILITY */
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        scroll-behavior: auto !important;
+        transition: none !important;
+        animation: none !important;
+    }
+}
